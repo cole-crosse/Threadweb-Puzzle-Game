@@ -496,7 +496,12 @@ export default function App() {
             )}
 
             {id === "map" && (
-              <svg width={280} height={280} className="mx-auto block">
+              <svg
+                width="100%"
+                height="auto"
+                viewBox="0 0 320 320"
+                className="mx-auto mb-8 max-w-xs sm:max-w-md md:max-w-lg"
+              >
                 {ALL_LINKS.map((lk) => {
                   const [p1, p2] = lk.split("&");
                   const i1 = PEOPLE.indexOf(p1);
